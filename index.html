@@ -1,0 +1,72 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bakchodi Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff7eb3, #65d6ce);
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    }
+    .box {
+      background: rgba(0,0,0,0.3);
+      border-radius: 20px;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+    button {
+      background: #fff;
+      color: #333;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    button:hover {
+      background: #ffefba;
+      transform: scale(1.05);
+    }
+    p {
+      font-size: 1.3em;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>🤪 Welcome to Bakchodi Central 🤪</h1>
+  <div class="box">
+    <p id="line">Click the button for bakchodi!</p>
+    <button onclick="generate()">Generate Bakchodi</button>
+  </div>
+
+  <script>
+    const lines = [
+      "Aaj ka din sirf bakchodi ke naam! 😂",
+      "Bhai, zindagi ek bakchodi hai, enjoy karo! 😎",
+      "Chai kam, bakchodi zyada ☕🔥",
+      "Tum socho, main bakchodi karta hoon! 🤯",
+      "Kal kare so aaj kar, aur aaj ki bakchodi abhi kar! 💥",
+      "Bakchodi without reason is the best season 🌈",
+      "Full masti, full bakchodi, tension zero! 🥳"
+    ];
+    function generate() {
+      const random = lines[Math.floor(Math.random() * lines.length)];
+      document.getElementById("line").textContent = random;
+    }
+  </script>
+</body>
+</html>
